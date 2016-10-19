@@ -2,6 +2,8 @@ package grails.issues
 
 import grails.test.hibernate.HibernateSpec
 
+// when @TestFor is removed test fails
+//@TestFor(IndividualPerson)
 class IndividualPersonSpec extends HibernateSpec {
 
     @Override
@@ -19,10 +21,10 @@ class IndividualPersonSpec extends HibernateSpec {
         and:
         member.save()
 
-        then:
+        then: 'validation fails'
         valid
 
-        and:
+        and: 'and of course member is null'
         member.id
     }
 }
