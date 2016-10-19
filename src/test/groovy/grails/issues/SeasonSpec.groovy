@@ -12,12 +12,6 @@ class SeasonSpec extends HibernateSpec {
 
     static final String DATE_FORMAT = 'dd.MM.yyyy'
 
-    def setup() {
-    }
-
-    def cleanup() {
-    }
-
     @Override
     List<Class> getDomainClasses() {
         return [Season]

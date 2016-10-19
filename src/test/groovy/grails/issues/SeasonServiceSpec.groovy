@@ -14,6 +14,8 @@ class SeasonServiceSpec extends HibernateSpec {
         [Season]
     }
 
+
+
     void "Find all seasons"() {
 
         when:
