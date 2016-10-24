@@ -4,10 +4,12 @@ class Season {
 
     Date validFrom
     Date validTo
+    String hyperlink
 
     static constraints = {
         validFrom nullable: false
         validTo nullable: false, validator: { val, obj -> val >= obj.validFrom }
+        hyperlink nullable: true, url: true
     }
 
     @Override
