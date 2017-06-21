@@ -35,5 +35,6 @@ class Game {
 
     static mapping = {
         sort startDate: 'asc'
+        autowire true
     }
 }
